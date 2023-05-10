@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import Profile from './components/Profile';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import About from './components/About';
+
+import Course from './components/Course';
 
 
 
@@ -20,7 +21,8 @@ function App() {
   return (
     <div className="App">
       <Profile data={profileData} />
-      <About />
+     
+      <Course/>
     
      
     </div>

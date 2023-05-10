@@ -28,7 +28,7 @@ Container{
   
 }
 .icons a{
-  padding: 20px;
+  padding: 10px;
   font-size: 20px;
   
   
@@ -73,5 +73,48 @@ color:gold;
 }
 .AboutContent h2,p{
 text-align: start;
+}
+.CourseData{
+  margin: auto;
+  width: 80%;
+}
+.CourseData h2{
+  text-align: start;
+}
+.card{
+ 
+  display: grid;
+  align-items:center; 
+  grid-template-columns: 3fr 1fr 2fr;
+  column-gap: 50px;
+  background-color: white;
+  
+  border: 2px solid rgb(233, 227, 227);
+ padding: 20px;
+
+}
+.image img{
+  width: 500px;
+  height:250px
+  
+}
+.details{
+  width:600px ;
+  height: 200px;
+  background-color: white;
+}
+
+
+.rating {
+
+  color:gold;
+}
+.details{
+  text-align: start;
+}
+.details2{
+  display: flex;
+  justify-content: space-between;
+ 
 }
 
