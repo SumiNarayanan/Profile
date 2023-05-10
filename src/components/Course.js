@@ -5,11 +5,13 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const Course = (props) => {
     const { image, title, author, rating, price } = props;
+
+
  
   return (
     <div className="card">
       <div className="image">
-        <img src={image} alt="Book cover" />
+        <img src={image} alt="BookCover" />
       </div>
       <div className="details">
         <h2>{title}</h2>
@@ -24,30 +26,31 @@ const Course = (props) => {
       </div>
     </div>
   );
-};
+          }
+// };
 
 const App = () => {
-  const books = [
+  const courses = [
     {
       id: 1,
-      image: 'book1-cover.jpg',
-      title: 'Book 1',
+      image: 'Course 1',
+      title: '',
       author: 'Author 1',
       rating: 5,
       price: '$19.99'
     },
     {
       id: 2,
-      image: 'book2-cover.jpg',
-      title: 'Book 2',
+      image: 'course 2',
+      title: '',
       author: 'Author 2',
       rating: 4,
       price: '$14.99'
     },
     {
       id: 3,
-      image: 'book3-cover.jpg',
-      title: 'Book 3',
+      image: 'course 3',
+      title: '',
       author: 'Author 3',
       rating: 3,
       price: '$9.99'
@@ -56,14 +59,14 @@ const App = () => {
 
   return (
     <div>
-      {books.map((book) => (
+      {courses.map((course) => (
         <Course
-          key={book.id}
-          image={book.image}
-          title={book.title}
-          author={book.author}
-          rating={book.rating}
-          price={book.price}
+          key={course.id}
+          image={course.image}
+          title={course.title}
+          author={course.author}
+          rating={course.rating}
+          price={course.price}
         />
       ))}
     </div>
